@@ -3,7 +3,7 @@
  * Plugin Name: URL Builder for Analytics
  * Plugin URI: https://github.com/Jarlskov/google-analytics-url-builder
  * Description: This plugin adds an easy way to create a Google Analytics URL for your posts.
- * Version: 0.0.1
+ * Version: 1.1.0
  * Author: Jesper Jarlskov
  * Author URI: http://jesperjarlskov.dk
  * Text Domain: url-builder-for-analytics
@@ -33,6 +33,6 @@ function url_builder_post_meta_box() {
  * Outputs the HTML directly to the browser, WordPress style!
  */
 function url_builder_post_meta_box_render() {
-    include( __DIR__ . '/meta_box_post_form.php' );
-    wp_enqueue_script( 'url-builder-for-analytics', plugins_url() . '/url-builder-for-analytics/url-builder-for-analytics.js', 'jquery', '0.0.1', true );
+    include( __DIR__ . '/templates/meta_box_post_form.php' );
+    wp_enqueue_script( 'url-builder-for-analytics', plugins_url() . '/url-builder-for-analytics/assets/url-builder-for-analytics.js', array( 'jquery-ui-tabs' ), '0.0.1', true );
 }
