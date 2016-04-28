@@ -104,5 +104,3 @@
         </p>
     </div>
 </div>
-<input type="hidden" name="post_url" value="<?= get_permalink(); ?>">
-            
