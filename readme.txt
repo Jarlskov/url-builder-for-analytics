@@ -2,8 +2,8 @@
 Contributors: jarlskov
 Tags: google, analytics, google analytics, google analytics url, google analytics url builder, url builder for analytics
 Requires at least: 4.3.1
-Tested up to: 4.5
-Stable tag: 1.1
+Tested up to: 4.5.1
+Stable tag: 1.1.1
 License: GPLv2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ Feel free to contact the project author if you have questions regarding the plug
 3. Form for generating any tracking URL you would want.
 
 == Changelog ==
+
+= 1.1.1 =
+ * Allow generating share links before publishing a post.
 
 = 1.1.0 =
  * Add social links generator.
