@@ -16,7 +16,7 @@ jQuery(document).ready( function($) {
     var urlBuilderCreateUrl = function( source, medium, campaign, term, content ) {
         var parameters = {};
 
-        var base_url = jQuery( '#sample-permalink a' ).text();
+        var base_url = jQuery( "#full-url" ).val();
 
         parameters.utm_source = source;
         parameters.utm_medium = medium;

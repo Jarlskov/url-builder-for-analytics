@@ -1,4 +1,6 @@
 <?php
+    global $post;
+
     $social_services = array(
         'googleplus' => 'Google+',
         'facebook' => 'Facebook',
@@ -7,6 +9,8 @@
     );
 ?>
 <div id="url-builder-meta-box-tabs" class="categorydiv">
+    <input type="hidden" name="full-url" id="full-url" value="<?= get_post_permalink($post, false, true); ?>">
+
     <ul class="category-tabs">
         <li class="tabs"><a href="#socialtab"><?= __( 'Social sharing', 'url-builder-for-analytics' ); ?></a></li>
         <li><a href="#customtab"><?= __( 'Custom sharing', 'url-builder-for-analytics' ); ?></a></li>
